@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { products } from '../products';
+import { Product, products } from '../products';
 
 @Component({
   selector: 'app-product-list',
@@ -9,10 +9,15 @@ import { products } from '../products';
 
 export class ProductListComponent {
   products = products;
-
+  like(product: Product){
+    product.like += 1;
+  }
+  remove(id: number){
+    this.products = this.products.filter(p => p.id != id);
+  }
   getProducts(){
     if(category == "All devices"){
-      return products;
+      return this.products;
     }
     else return this.products.filter(p => p.category === category);
   }

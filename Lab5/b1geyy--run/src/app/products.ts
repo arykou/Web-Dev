@@ -5,9 +5,10 @@ export interface Product {
   description: string;
   url: string;
   category: string;
+  like: number;
 }
 
-export const products = [
+export var products = [
   {
     id: 1,
     name: 'Apple iPhone 13 128Gb black',
@@ -16,7 +17,8 @@ export const products = [
     url:'https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=151010000#!/item',
     photo: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h49/hc0/46392662523934/apple-iphone-13-128gb-cernyj-102298404-1-Container.jpg',
     rat:'★★★★',
-    category:'Phone'
+    category:'Phone',
+    like:0
   },
   {
     id: 2,
@@ -26,7 +28,8 @@ export const products = [
     url:'https://kaspi.kz/shop/p/apple-iphone-12-mini-128gb-sinii-100657856/?c=151010000#!/item',
     photo: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h6c/hcf/33281467514910/apple-iphone-12-mini-128gb-sinij-100657856-1-Container.jpg',
     rat:'★★★★★',
-    category:'Phone'
+    category:'Phone',
+    like:0
   },
   {
     id: 3,
@@ -36,7 +39,8 @@ export const products = [
     url:'https://kaspi.kz/shop/p/apple-iphone-11-128gb-belyi-1005119/?c=151010000#!/item',
     photo: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h6a/h4e/32287773589534/apple-iphone-11-128gb-belyj-1005119-1-Container.jpg',
     rat:'★★★',
-    category:'Phone'
+    category:'Phone',
+    like:0
   },
   {
     id: 4,
@@ -46,7 +50,8 @@ export const products = [
     url:'https://kaspi.kz/shop/p/apple-iphone-14-128gb-sirenevyi-106363117/?c=151010000#!/item',
     photo: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h5e/ha3/63072545734686/apple-iphone-14-128gb-sirenevyj-106363117-1.jpg',
     rat:'★★★★★',
-    category:'Phone'
+    category:'Phone',
+    like:0
   },
   {
     id: 5,
@@ -56,7 +61,8 @@ export const products = [
     url:'https://kaspi.kz/shop/p/apple-macbook-pro-14-mkgp3-seryi-102866247/?c=151010000#!/item',
     photo: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hbf/h8a/47153374199838/apple-macbook-pro-14-mkgp3-seryj-102866247-1.jpg',
     rat:'★★★',
-    category:'Laptop'
+    category:'Laptop',
+    like:0
   },
   {
     id: 6,
@@ -66,7 +72,8 @@ export const products = [
     url:'https://kaspi.kz/shop/p/apple-watch-series-8-45-mm-aluminum-chernyi-106362847/?c=151010000#!/item',
     photo: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h1a/h69/63158968057886/apple-watch-series-8-41-mm-cernyj-106362847-1.jpg',
     rat:'★★★★',
-    category:'Watch'
+    category:'Watch',
+    like:0
   },
   {
     id: 7,
@@ -76,7 +83,8 @@ export const products = [
     url:'https://kaspi.kz/shop/p/apple-airpods-pro-2nd-generation-belyi-106362968/?c=151010000#!/item',
     photo: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hba/hf8/62281477259294/apple-airpods-pro-2nd-generation-belyj-106362968-1.jpg',
     rat:'★★★★★',
-    category:'Headphones'
+    category:'Headphones',
+    like:0
   },
   {
     id: 8,
@@ -86,7 +94,8 @@ export const products = [
     url:'https://kaspi.kz/shop/p/apple-airpods-max-zelenyi-101161547/?c=151010000#!/item',
     photo: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd4/h12/33885799677982/apple-airpods-max-zelenyj-101161547-1-Container.jpg',
     rat:'★★★★',
-    category:'Headphones'
+    category:'Headphones',
+    like:0
     
   },
   {
@@ -97,7 +106,8 @@ export const products = [
     url:'https://kaspi.kz/shop/search/?text=AirPods%20max',
     photo: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h02/hca/64895798050846/apple-ipad-pro-2022-11-128gb-wi-fi-seryi-107276534-1.jpg',
     rat:'★★★',
-    category:'Phone'
+    category:'Phone',
+    like:0
   },
   {
     id: 10,
@@ -107,7 +117,8 @@ export const products = [
     url:'https://kaspi.kz/shop/p/apple-ipad-mini-2021-8-3-64gb-wi-fi-cellular-rozovyi-102301187/?c=151010000#!/item',
     photo: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h06/h5a/45595063943198/apple-ipad-mini-2021-wi-fi-cellular-64gb-rozovyj-102301187-1-Container.jpg',
     rat:'★★★★★',
-    category:'Phone'
+    category:'Phone',
+    like:0
   },
   
 ];

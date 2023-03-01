@@ -13,7 +13,6 @@ export class AppComponent {
     this.show = !this.show;
   }
   showCategory(category:string){
-    // window.open(category);
     change(category);
   }
 }

@@ -19,5 +19,9 @@ export interface Category {
     {
         id:4,
         name:'Laptop'
+    },
+    {
+      id: 5,
+      name: 'All devices'
     }
   ]

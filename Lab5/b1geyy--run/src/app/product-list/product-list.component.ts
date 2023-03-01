@@ -9,15 +9,12 @@ import { products } from '../products';
 
 export class ProductListComponent {
   products = products;
-  check = false;
+
   getProducts(){
-    if (category != null){
-      this.check = true;
+    if(category == "All devices"){
+      return products;
     }
-    return products;
-  }
-  changeByCategory(){
-    return this.products.filter(p => p.category === category);
+    else return this.products.filter(p => p.category === category);
   }
   share(url:string) {
     window.open("https://t.me/share/url?url=" + url,'_blank');
@@ -30,7 +27,7 @@ export class ProductListComponent {
 function change(cat:string){
   category = cat;
 }
-var category : String;
+var category = "All devices";
 export {change}
 
 /*
